@@ -1,9 +1,14 @@
 # NBA-player-shooting-data-visualization
 A Front-End web project to show the hot shooting points of NBA players to help coach or other officers analysis.
+
 Allow users search the player to find the data.
+
 Provide the basic information of the player.
+
 Provide the hexbin and scatter shooting points of the player.
+
 The number of the hexbin can be changed to find the hot field (By effciency).
+
 
 Structure
 -----------
