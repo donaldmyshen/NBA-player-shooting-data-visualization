@@ -27,34 +27,34 @@ export class DataViewContainer extends React.Component {
 
     render() {
         return (
-            <div className="data-view">
+            <div className = "data-view">
                 <ShotChart
-                    playerId={this.props.playerId}
-                    minCount={this.state.minCount}
-                    chartType={this.state.chartType}
-                    displayToolTip={this.state.displayToolTips}
+                    playerId = {this.props.playerId}
+                    minCount = {this.state.minCount}
+                    chartType = {this.state.chartType}
+                    displayToolTip = {this.state.displayToolTips}
                 />
-                <div className="filters">
+                <div className = "filters">
                     {this.state.chartType === 'hexbin'?
                         <CountSlider
-                            minCount={this.state.minCount}
-                            onCountSliderChange={_.debounce(this.onCountSliderChange, 500)}
+                            minCount = {this.state.minCount}
+                            onCountSliderChange = {_.debounce(this.onCountSliderChange, 500)}
                         /> : null
                     }
-                    <Row className="chart-type-radio">
-                        <Col span={12} offset={3}>
-                            <RadioGroup onChange={this.onChartTypeChange} value={this.state.chartType}>
-                                <Radio value="hexbin">Hexbin</Radio>
-                                <Radio value="scatter">Scatter</Radio>
+                    <Row className = "chart-type-radio">
+                        <Col span = {12} offset={3}>
+                            <RadioGroup onChange = {this.onChartTypeChange} value={this.state.chartType}>
+                                <Radio value = "hexbin">Hexbin</Radio>
+                                <Radio value = "scatter">Scatter</Radio>
                             </RadioGroup>
                         </Col>
                         <Col span={6}>
                             Tooltip:{' '}
                             <Switch
-                                checkedChildren="On"
-                                unCheckedChildren="Off"
+                                checkedChildren = "On"
+                                unCheckedChildren = "Off"
                                 defaultChecked
-                                onChange={this.onTooltipChange}
+                                onChange = {this.onTooltipChange}
                             />
                         </Col>
                     </Row>

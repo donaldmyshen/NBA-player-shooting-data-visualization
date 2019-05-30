@@ -40,7 +40,7 @@ export class ShotChart extends React.Component {
     }
     render() {
         return (
-            <div id="shot-chart"></div>
+            <div id = "shot-chart"></div>
         );
     }
 }

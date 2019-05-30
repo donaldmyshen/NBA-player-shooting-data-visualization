@@ -24,11 +24,11 @@ export class Main extends React.Component {
 
     render() {
         return (
-            <div className="main">
+            <div className = "main">
                 <SearchBar loadPlayerInfo={this.loadPlayerInfo}/>
-                <div className="player">
-                    <Profile playerInfo={this.state.playerInfo}/>
-                    <DataViewContainer playerId={this.state.playerInfo.playerId}/>
+                <div className = "player">
+                    <Profile playerInfo = {this.state.playerInfo}/>
+                    <DataViewContainer playerId = {this.state.playerInfo.playerId}/>
                 </div>
             </div>
         );
