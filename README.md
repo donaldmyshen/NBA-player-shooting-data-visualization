@@ -34,6 +34,3 @@ Demo
 ![](https://github.com/donaldmyshen/NBA-player-shooting-data-visualization/blob/master/demoImage/demo2.jpg)
 ![](https://github.com/donaldmyshen/NBA-player-shooting-data-visualization/blob/master/demoImage/demo3.jpg)
 
-By the way
-----------
-Lakers the champion!
